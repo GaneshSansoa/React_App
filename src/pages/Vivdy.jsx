@@ -67,6 +67,7 @@ class Vivdy extends React.Component {
     const movies = paginate(sorted, currentPage, pageSize);
     return { itemsCount: filtered.length, data: movies };
   };
+
   render() {
     let tableClasses = "";
     const { length: count } = this.state.movies;
